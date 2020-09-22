@@ -1,0 +1,274 @@
+<html>
+<head>
+<title>Book Store</title>
+<meta name="GENERATOR" content="YesSoftware CodeCharge v.2.0.4 / Templates.ccp build 11/01/2001">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head>
+<body style="background-color: #FFFFFF; color: #000000; font-family: Arial, Tahoma, Verdana, Helveticabackground-color: #FFFFFF; color: #000000; font-family: Arial, Tahoma, Verdana, Helvetica">
+{Header}
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormSearchHeader-->
+   
+   <!--EndFormSearchHeader-->
+   <!--BeginFormSearch--><form method="GET" action="{ActionPage}" name="Search">
+    <input type="hidden" name="FormName" value="Search"><input type="hidden" name="FormAction" value="search">
+    <table style="width:100%">
+     <tr>
+      <td style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1" colspan="2"><a name="Search"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></a></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFEAC5; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #000000">Category</font></td>
+      <td style="background-color: #FFFFFF; border-width: 1"><select size="1" name="category_id"><!--BeginSearchLBcategory_id--><option value="{ID}" {Selected}>{Value}</option><!--EndSearchLBcategory_id--></select></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFEAC5; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #000000">Title</font></td>
+      <td style="background-color: #FFFFFF; border-width: 1"><input type="text" name="name" maxlength="10" value="{name}" size="10"></td>
+     </tr>
+     <tr>
+      <td align="right" colspan="3"><input type="submit" value="Search"></td>
+     </tr>
+    </table>
+    </form><!--EndFormSearch-->
+   <!--BeginFormSearchFooter-->
+   
+   <!--EndFormSearchFooter-->
+   <!--BeginFormAdvMenuHeader-->
+   
+   <!--EndFormAdvMenuHeader-->
+   <!--BeginFormAdvMenu--><table style="width:100%">
+     <tr>
+      <td colspan="1"  style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><a href="{Field1}"><font style="font-size: 10pt; color: #000000">Advanced search</font></a></td>
+     </tr>
+    </table><!--EndFormAdvMenu-->
+   <!--BeginFormAdvMenuFooter-->
+   <br>
+   <!--EndFormAdvMenuFooter-->
+   <!--BeginFormCategoriesHeader-->
+   
+   <!--EndFormCategoriesHeader-->
+   <!--BeginFormCategories--><table style="width:100%">
+     <tr>
+      <td style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1" colspan="1"><a name="Categories"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></a></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <!--BeginDListCategories-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><a href="{name_URLLink}?category_id={Prmname_category_id}&{TransitParams}"><font style="font-size: 10pt; color: #000000">{name}</font></a>&nbsp;</td>
+     </tr>
+     <!--EndDListCategories--> 
+     <!--BeginCategoriesNoRecords-->
+     <tr><td colspan="1" style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">No records</font></td></tr>
+     <!--EndCategoriesNoRecords--> 
+    </table>
+   <!--EndFormCategories-->
+   <!--BeginFormCategoriesFooter-->
+   <br>
+   <!--EndFormCategoriesFooter-->
+   <!--BeginFormSpecialsHeader-->
+   
+   <!--EndFormSpecialsHeader-->
+   <!--BeginFormSpecials--><table style="width:100%">
+     <tr>
+      <td style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1" colspan="1"><a name="Specials"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></a></td>
+     </tr>
+     <!--BeginDListSpecials-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">{article_title}&nbsp;</font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">{article_desc}&nbsp;</font></td>
+     </tr>
+     <!--BeginSpecialsRecordSeparator-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1">&nbsp;</td>
+     </tr><!--EndSpecialsRecordSeparator-->
+     <!--EndDListSpecials--> 
+     <!--BeginSpecialsNoRecords-->
+     <tr><td colspan="1" style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">No records</font></td></tr>
+     <!--EndSpecialsNoRecords--> 
+    </table>
+   <!--EndFormSpecials-->
+   <!--BeginFormSpecialsFooter-->
+   
+   <!--EndFormSpecialsFooter-->
+   </td>
+   <td valign="top">
+   <!--BeginFormRecommendedHeader-->
+   <table width="250"><tr><td></td></tr></table>
+   <!--EndFormRecommendedHeader-->
+   <!--BeginFormRecommended--><table style="width:100%">
+     <tr>
+      <td style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1" colspan="1"><a name="Recommended"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></a></td>
+     </tr>
+     <!--BeginDListRecommended--><tr><td><table width="100%" style="width:100%">
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><a href="{name_URLLink}?item_id={Prmname_item_id}&{TransitParams}"><font style="font-size: 10pt; color: #000000">{name}</font></a>&nbsp;</td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">{author}&nbsp;</font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold">Price</font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">{price}&nbsp;</font></td>
+     </tr></table></td>
+</tr>
+</table>
+</td></tr>
+     <!--BeginRecommendedRecordSeparator-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1">&nbsp;</td>
+     </tr><!--EndRecommendedRecordSeparator-->
+     <!--EndDListRecommended--> 
+     <!--BeginRecommendedNoRecords-->
+     <tr><td colspan="1" style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">No records</font></td></tr>
+     <!--EndRecommendedNoRecords--> 
+     <!--BeginRecommendedNavigator-->
+     <tr>
+      <td colspan="1" style="background-color: #FFFFFF; border-style: inset; border-width: 0">
+       <font style="font-size: 10pt; color: #CE7E00; font-weight: bold">
+       
+        <a href{RecommendedNavigatorFirstPage}="{FileName}?{FormParams}{SortParams}FormRecommended_Page={PrevPage}#Recommended"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold">Previous</font></a>
+        [ {RecommendedCurrentPage} ]
+        <a href{RecommendedNavigatorLastPage}="{FileName}?{FormParams}{SortParams}FormRecommended_Page={NextPage}#Recommended"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold">Next</font></a>
+       </font>
+      </td>
+     </tr>
+    <!--EndRecommendedNavigator-->
+    </table>
+   <!--EndFormRecommended-->
+   <!--BeginFormRecommendedFooter-->
+   
+   <!--EndFormRecommendedFooter-->
+   </td>
+   <td valign="top">
+   <!--BeginFormWhatHeader-->
+   
+   <!--EndFormWhatHeader-->
+   <!--BeginFormWhat--><table style="width:100%">
+     <tr>
+      <td style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1" colspan="1"><a name="What"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></a></td>
+     </tr>
+     <!--BeginDListWhat-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><a href="{article_title_URLLink}?item_id={Prmarticle_title_item_id}&{TransitParams}"><font style="font-size: 10pt; color: #000000">{article_title}</font></a>&nbsp;</td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">{article_desc}&nbsp;</font></td>
+     </tr>
+     <!--BeginWhatRecordSeparator-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1">&nbsp;</td>
+     </tr><!--EndWhatRecordSeparator-->
+     <!--EndDListWhat--> 
+     <!--BeginWhatNoRecords-->
+     <tr><td colspan="1" style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">No records</font></td></tr>
+     <!--EndWhatNoRecords--> 
+    </table>
+   <!--EndFormWhat-->
+   <!--BeginFormWhatFooter-->
+   
+   <!--EndFormWhatFooter-->
+   <!--BeginFormNewHeader-->
+   
+   <!--EndFormNewHeader-->
+   <!--BeginFormNew--><table style="width:100%">
+     <tr>
+      <td style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1" colspan="1"><a name="New"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></a></td>
+     </tr>
+     <!--BeginDListNew-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><a href="{article_title_URLLink}?item_id={Prmarticle_title_item_id}&{TransitParams}"><font style="font-size: 10pt; color: #000000">{article_title}</font></a>&nbsp;</td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">{article_desc}&nbsp;</font></td>
+     </tr>
+     <!--BeginNewRecordSeparator-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1">&nbsp;</td>
+     </tr><!--EndNewRecordSeparator-->
+     <!--EndDListNew--> 
+     <!--BeginNewNoRecords-->
+     <tr><td colspan="1" style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">No records</font></td></tr>
+     <!--EndNewNoRecords--> 
+    </table>
+   <!--EndFormNew-->
+   <!--BeginFormNewFooter-->
+   
+   <!--EndFormNewFooter-->
+   <!--BeginFormWeeklyHeader-->
+   
+   <!--EndFormWeeklyHeader-->
+   <!--BeginFormWeekly--><table style="width:100%">
+     <tr>
+      <td style="background-color: #336699; text-align: Center; border-style: outset; border-width: 1" colspan="1"><a name="Weekly"><font style="font-size: 12pt; color: #FFFFFF; font-weight: bold">{FormTitle}</font></a></td>
+     </tr>
+     <!--BeginDListWeekly--><tr><td><table width="100%" style="width:100%">
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><a href="{article_title_URLLink}?item_id={Prmarticle_title_item_id}&{TransitParams}"><font style="font-size: 10pt; color: #000000">{article_title}</font></a>&nbsp;</td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-style: inset; border-width: 0"><font style="font-size: 10pt; color: #CE7E00; font-weight: bold"></font></td>
+     </tr>
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">{article_desc}&nbsp;</font></td>
+     </tr></table></td></tr>
+     <!--BeginWeeklyRecordSeparator-->
+     <tr>
+      <td style="background-color: #FFFFFF; border-width: 1">&nbsp;</td>
+     </tr><!--EndWeeklyRecordSeparator-->
+     <!--EndDListWeekly--> 
+     <!--BeginWeeklyNoRecords-->
+     <tr><td colspan="1" style="background-color: #FFFFFF; border-width: 1"><font style="font-size: 10pt; color: #000000">No records</font></td></tr>
+     <!--EndWeeklyNoRecords--> 
+    </table>
+   <!--EndFormWeekly-->
+   <!--BeginFormWeeklyFooter-->
+   
+   <!--EndFormWeeklyFooter-->
+   </td>
+  </tr>
+ </table>
+
+
+{Footer}
+
+</body>
+</html>
